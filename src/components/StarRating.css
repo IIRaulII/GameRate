@@ -1,0 +1,33 @@
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: color var(--transition-speed);
+  user-select: none;
+}
+
+.star:hover {
+  color: var(--warning-color);
+}
+
+.star.filled {
+  color: var(--warning-color);
+}
+
+.star.readonly {
+  cursor: default;
+}
+
+.star.readonly:hover {
+  color: inherit;
+}
+
+.star.readonly.filled {
+  color: var(--warning-color);
+} 
